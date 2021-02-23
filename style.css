@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:0;
+    background: #eee;
+    height: auto;
+    line-height: 1.5;
+    /* display: flex;
+    flex-direction: column; */
+}
+#title, #end{
+    margin: 5px;
+    padding:15px;
+}
+h1{
+    font-weight: 20vh;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:steelblue;
+   
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 15px;
+}
+nav, aside{
+    width: 20%;
+    
+}
+ul li{
+    list-style-type: none;
+    padding: 10px 0px;
+    border-bottom: solid 1px lightgrey;
+}
+ul{
+    padding-left:0;
+}
+section{
+    width: 55%;
+    flex-direction: row;
+    
+}
+
+h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+img{
+    width: 100%;
+    padding-top: 5px;
+    height: 100%;
+}
+
+aside{
+    background: rgb(178, 214, 236);
+    padding-left: 5px;
+}
+header, footer{
+    background:sandybrown;
+}    
+footer{
+    text-align: center;
+}
+@media (max-width:768px ){
+ 
+    nav{
+        width:25%;
+    }
+    section{
+        width:70%;
+    }
+    aside{
+        width:100% ;
+    }
+}
+@media (max-width: 500px){
+    nav, section, aside{
+        width: 100%;
+    }
+}
+
